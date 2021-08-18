@@ -10,4 +10,11 @@
     <color name="tomato">#ec5151</color>
     <color name="cherry">#d90034</color>
     <color name="cornflowerBlue">#577bdf</color>
+    <color name="midGreen">#44a33d</color>
+    <color name="card_white">#d8d8d8</color>
+    <color name="purple1">#800080</color>
+    <color name="purple2">#800039</color>
+    <color name="red">#b30000</color>
+    <color name="orange">#FF4500</color>
+    <color name="yellow">#ffcc00</color>
 </resources>

@@ -4,4 +4,10 @@
     <string name="register_tv">me as a collector</string>
     <string name="track_btn">track my application</string>
     <string name="landing_page_tv">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="upload">Upload</string>
+    <string name="edit">Edit</string>
+    <string name="my_dashboard">My DashBoard</string>
+    <string name="followers">Followers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -35,7 +35,7 @@ class LandingActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnTrack.setOnClickListener {
-            binding.scrollView.smoothScrollTo(0,binding.recyclerView.top,300)
+            binding.scrollView.smoothScrollTo(0,binding.recyclerView.top,500)
         }
     }
 
