@@ -87,7 +87,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/switchMaterial"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         tools:text="john.doe" />
@@ -100,7 +99,6 @@
         android:text="@string/my_dashboard"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/tvProfileName"
         app:thumbTint="@color/white"
@@ -109,13 +107,12 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/ic_dual_line_card_background"
         android:orientation="horizontal"
         android:weightSum="3"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/switchMaterial"
         tools:layout_height="wrap_content">
@@ -128,6 +125,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tvFollowers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="2.3K" />
@@ -147,6 +145,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tvArtWork"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="2.3K" />
@@ -154,7 +153,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/followers" />
+                android:text="@string/artwork" />
 
         </LinearLayout>
 
@@ -166,6 +165,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tvExhibitions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="2.3K" />
@@ -173,7 +173,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/followers" />
+                android:text="@string/exhibitions" />
 
         </LinearLayout>
 
@@ -182,17 +182,17 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="3"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:layout_height="wrap_content">
+        tools:layout_height="0dp">
 
         <TextView
+            android:id="@+id/tvLikes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -202,6 +202,7 @@
             tools:text="120" />
 
         <TextView
+            android:id="@+id/tvViews"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -211,6 +212,7 @@
             tools:text="120" />
 
         <TextView
+            android:id="@+id/tvShare"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -224,12 +226,11 @@
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/_16sdp"
         android:orientation="horizontal"
         android:weightSum="5"
         app:layout_constraintBottom_toTopOf="@+id/fragment4"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         tools:layout_height="@dimen/_20sdp">
@@ -268,9 +269,9 @@
 
     <fragment
         android:id="@+id/fragment4"
+        android:name="com.sumeet.binaryvedaassignmentapp.ui.profile.fragments.ViewPagerFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        class ="com.sumeet.binaryvedaassignmentapp.ui.profile.fragments.ViewPagerFragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline12"
         app:layout_constraintStart_toStartOf="@+id/guideline11"
@@ -323,7 +324,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6" />
+        app:layout_constraintGuide_percent="0.5" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline11"

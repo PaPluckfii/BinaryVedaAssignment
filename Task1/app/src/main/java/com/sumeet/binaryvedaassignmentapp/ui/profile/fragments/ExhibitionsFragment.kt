@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.sumeet.binaryvedaassignmentapp.R
 import com.sumeet.binaryvedaassignmentapp.databinding.FragmentExibitionsBinding
+import com.sumeet.binaryvedaassignmentapp.ui.profile.ProfileViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
 class ExhibitionsFragment : Fragment() {
 
