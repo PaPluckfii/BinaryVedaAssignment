@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BinaryVedaAssignmentApp</string>
+    <string name="register_btn">register</string>
+    <string name="register_tv">me as a collector</string>
+    <string name="track_btn">track my application</string>
+    <string name="landing_page_tv">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
 </resources>

@@ -6,4 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".ui.profile.ProfileActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="12dp"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_height="80dp"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/upload_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toStartOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/edit_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
