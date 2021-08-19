@@ -38,6 +38,9 @@ class UploadsFragment() : Fragment() {
         setRecyclerView()
     }
 
+    /**
+     * Setting up recycler view.
+     */
     private fun setRecyclerView() {
         binding.recyclerView.apply {
             layoutManager = GridLayoutManager(context,2)
@@ -45,6 +48,9 @@ class UploadsFragment() : Fragment() {
         }
     }
 
+    /**
+     * Creating a dummy list of Images for uploaded gallery.
+     */
     private fun createListOfDrawables() {
         val list = viewModel.getProfileData().picturesList
         for (i in list){

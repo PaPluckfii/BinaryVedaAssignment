@@ -24,11 +24,13 @@ class LandingActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setUpRecyclerView()
-
         handleListeners()
 
     }
 
+    /**
+     * Function to handle click listeners
+     */
     private fun handleListeners() {
         binding.btnRegister.setOnClickListener {
             val intent = Intent(this,ProfileActivity::class.java)
@@ -39,6 +41,9 @@ class LandingActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Function to setup recycler view with the list of items.
+     */
     private fun setUpRecyclerView() {
         val recyclerAdapter = LandingPageAdapter(viewModel.getRecyclerList())
         val linearLayoutManager = LinearLayoutManager(this)

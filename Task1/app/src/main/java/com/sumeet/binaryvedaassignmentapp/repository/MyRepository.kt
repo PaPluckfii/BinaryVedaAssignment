@@ -15,6 +15,9 @@ class MyRepository {
         return StaticLandingPageItemList.getList()
     }
 
+    /**
+     * Getting profile data
+     */
     fun getProfileData(): DummyProfile {
         return DummyProfile()
     }

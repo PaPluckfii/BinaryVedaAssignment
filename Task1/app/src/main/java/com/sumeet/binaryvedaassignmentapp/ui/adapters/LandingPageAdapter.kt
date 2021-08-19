@@ -7,6 +7,9 @@ import com.bumptech.glide.Glide
 import com.sumeet.binaryvedaassignmentapp.databinding.LandingItemLayoutBinding
 import com.sumeet.binaryvedaassignmentapp.model.LandingPageItem
 
+/**
+ * Adapter for recycler view in landing page.
+ */
 class LandingPageAdapter(
     private val list : List<LandingPageItem>
 ) : RecyclerView.Adapter<LandingPageAdapter.LandingPageViewHolder>(){

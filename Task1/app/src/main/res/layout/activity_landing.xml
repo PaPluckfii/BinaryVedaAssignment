@@ -17,6 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/agc_logo"
+            app:layout_constraintBottom_toTopOf="@+id/ivLandingImage"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,59 +31,71 @@
         <ImageView
             android:id="@+id/ivLandingImage"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_landing_image"
+            app:layout_constraintBottom_toTopOf="@+id/tvLandingPageText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
 
+        <TextView
+            android:id="@+id/tvLandingPageText"
+            style="@style/text_style_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="@string/landing_page_tv"
+            app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/ivLandingImage" />
+
         <Button
             android:id="@+id/btnRegister"
+            style="@style/text_style_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
             android:background="@drawable/btn_background_tomato"
             android:drawableStart="@drawable/ic_baseline_white_arrow_forward_24"
             android:drawablePadding="@dimen/_2sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
             android:text="@string/register_btn"
             android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/btnTrack"
             app:layout_constraintEnd_toStartOf="@+id/tvAlongSideButton"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
             app:layout_constraintTop_toBottomOf="@+id/tvLandingPageText" />
 
         <TextView
             android:id="@+id/tvAlongSideButton"
+            style="@style/text_style_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register_tv"
             app:layout_constraintBottom_toBottomOf="@+id/btnRegister"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toEndOf="@+id/btnRegister"
-            app:layout_constraintTop_toBottomOf="@+id/tvLandingPageText" />
+            app:layout_constraintTop_toTopOf="@+id/btnRegister" />
 
         <Button
             android:id="@+id/btnTrack"
+            style="@style/text_style_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
             android:background="@android:color/transparent"
             android:drawableStart="@drawable/ic_baseline_blue_arrow_forward_24"
             android:text="@string/track_btn"
             android:textAllCaps="false"
-            android:textColor="@color/cornflowerBlue"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
-
-        <TextView
-            android:id="@+id/tvLandingPageText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/landing_page_tv"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
-            app:layout_constraintTop_toBottomOf="@+id/ivLandingImage" />
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline2"
@@ -95,9 +108,17 @@
             android:id="@+id/recyclerView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
-            app:layout_constraintTop_toBottomOf="@+id/btnTrack" />
+            app:layout_constraintTop_toBottomOf="@id/btnTrack" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

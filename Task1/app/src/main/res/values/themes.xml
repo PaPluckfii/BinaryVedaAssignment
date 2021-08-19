@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/tomato</item>
         <item name="colorPrimaryVariant">@color/cherry</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="font">@font/barlow_condensed_extra_light</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/tomato</item>
         <item name="colorSecondaryVariant">@color/cherry</item>

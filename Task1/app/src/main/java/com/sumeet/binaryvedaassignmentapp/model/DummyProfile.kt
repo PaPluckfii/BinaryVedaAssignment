@@ -2,6 +2,9 @@ package com.sumeet.binaryvedaassignmentapp.model
 
 import com.sumeet.binaryvedaassignmentapp.R
 
+/**
+ * Dummy data class for profile
+ */
 data class DummyProfile(
     val profileName: String = "john.doe",
     val profilePic: Int = R.drawable.profile_pic,
@@ -17,11 +20,13 @@ data class DummyProfile(
         R.color.cornflowerBlue
     ),
     val picturesList : List<Int> = listOf(
-        R.drawable.ic_landing_image_1,
-        R.drawable.ic_landing_image_1,
-        R.drawable.ic_landing_image_1,
-        R.drawable.ic_landing_image_1,
-        R.drawable.ic_landing_image_1,
-        R.drawable.ic_landing_image_1
+        R.drawable.pic_1,
+        R.drawable.pic_2,
+        R.drawable.pic_3,
+        R.drawable.pic_4,
+        R.drawable.pic_1,
+        R.drawable.pic_2,
+        R.drawable.pic_3,
+        R.drawable.pic_4
     )
 )

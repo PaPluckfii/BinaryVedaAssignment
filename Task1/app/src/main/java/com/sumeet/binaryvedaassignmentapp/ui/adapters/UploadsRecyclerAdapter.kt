@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.sumeet.binaryvedaassignmentapp.databinding.UploadItemLayoutBinding
 
+/**
+ * Adapter for recycler view in uploads fragment
+ */
 class UploadsRecyclerAdapter(
     private val list : List<Drawable>
 ) : RecyclerView.Adapter<UploadsRecyclerAdapter.UploadsRecyclerViewHolder>(){

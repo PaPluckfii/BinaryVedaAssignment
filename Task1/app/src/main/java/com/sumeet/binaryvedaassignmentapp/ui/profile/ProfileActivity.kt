@@ -2,6 +2,7 @@ package com.sumeet.binaryvedaassignmentapp.ui.profile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
@@ -23,9 +24,23 @@ class ProfileActivity : AppCompatActivity() {
 
         profileData = viewModel.getProfileData()
         updateProfileData()
+        handleClicksAndListeners()
 
     }
 
+    private fun handleClicksAndListeners() {
+        binding.switchMaterial.setOnClickListener {
+            if(it.isActivated){
+                Toast.makeText(this,"Profile is public",Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(this,"Profile is private",Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    /**
+     * Updating views based on the dummy data retrieved.
+     */
     private fun updateProfileData() {
         Glide.with(binding.root).load(ContextCompat.getDrawable(this,profileData.profilePic))
             .into(binding.ivProfilePic)

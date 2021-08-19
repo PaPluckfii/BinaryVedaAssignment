@@ -30,6 +30,9 @@ class ViewPagerFragment : Fragment() {
 
     }
 
+    /**
+     * setting up viewpager.
+     */
     private fun setUpViewPager() {
         binding.viewPager.adapter = ViewPagerAdapter(
                 this,

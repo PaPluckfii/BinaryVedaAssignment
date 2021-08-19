@@ -2,6 +2,9 @@ package com.sumeet.binaryvedaassignmentapp.model
 
 import com.sumeet.binaryvedaassignmentapp.R
 
+/**
+ * generating a static list of landing page items for recycler view.
+ */
 object StaticLandingPageItemList {
     fun getList() : List<LandingPageItem>{
         val list : ArrayList<LandingPageItem> = ArrayList(8)
